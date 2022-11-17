@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Neucha&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/png">
+    <script src="script.js"></script>
+    <title>Парадокс Монти-Холла</title>
+</head>
+<body>
+    <div class="container">
+        <a href="page_eng/index_eng.html" style="color: white;">eng</a>
+        <div class="header_container">
+            <div class="header"">
+                <div id="about_text">
+                    Парадокс Монти-Холла — это одна из тех математических задач, над решением которой уже долгое время бьются многие умы, и даже всемирно известных математиков она приводит в затруднение.
+                    <br><br>
+                    В чём же суть парадокса Монти-Холла?
+                    Перед вами три карты. За двумя картами находятся козы, за одной — монета. Надо угадать карту с монетой, что приведет к победе.
+                    <br><br>
+                    Первая открытая карта всегда будет с козой, но вы можете поменять свой выбор. Этот вопрос многих ставит в тупик. Люди обычно думают: «Ну какая разница: остались две карты, и монета может с одинаковой вероятностью 50% оказаться как за одной, так и за другой картой?». … И оказываются неправы. Правильный ответ — всегда менять первоначальный выбор. Поступая так, вы удваиваете свои шансы на победу.
+                    <br><br>
+                    Приятной игры!
+                    <div id="about_btn" onclick="about();">закрыть</div>
+                </div>
+                <div id="header_text" onclick="about();">Парадокс Монти-Холла</div>
+            </div>
+            <div class="counter">
+                <div class="counter_text">Игр сыграно:</div>
+                <div id="counter_game">0</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="statistic">
+                <div class="str_name">
+                    <p class="s_n_1">менял карту</p>
+                    <p class="s_n_2">Не менял карту</p>
+                </div>
+                <div class="table_1">
+                    <div class="count">
+                        Раз
+                    </div>
+                    <div id="count_top">
+                        0
+                    </div>
+                    <div id="count_bott">
+                        0
+                    </div>
+                </div>
+                <div class="table_2">
+                    <div id="win">
+                        победил
+                    </div>
+                    <div id="win_top">
+                        0
+                    </div>
+                    <div id="win_bott">
+                        0
+                    </div>
+                </div>
+                <div class="table_3">
+                    <div id="lose">
+                        проиграл
+                    </div>
+                    <div id="lose_top">
+                        0
+                    </div>
+                    <div id="lose_bott">
+                        0
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <img id="0" class="card1" src="/img/card_back.png" onclick="choiceCard(this);">
+                <img id="1" class="card2" src="/img/card_back.png" onclick="choiceCard(this);">
+                <img id="2" class="card3" src="/img/card_back.png" onclick="choiceCard(this);">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

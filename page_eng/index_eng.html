@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/page_eng/style_eng.css">
+    <link rel="shortcut icon" href="/img/icon.png" type="image/png">
+    <script src="/page_eng/script_eng.js"></script>
+    <title>Monty-Hall paradox</title>
+</head>
+<body>
+    <div class="container">
+        <a href="/index.html" style="color: white;">rus</a>
+        <div class="header_container">
+            <div class="header"">
+                <div id="about_text">
+                    The Monty Hall paradox is one of those mathematical problems that many minds have been struggling to solve for a long time, and even world-famous mathematicians find it difficult.
+                    <br><br>
+                    What is the essence of the Monty Hall paradox? There are three cards in front of you. There are goats behind two cards, and a coin behind one. It is necessary to guess the card with the coin, which will lead to victory.
+                    <br><br>
+                    The first open card will always be with a goat, but you can change your choice. This question baffles many. People usually think: "Well, what's the difference: there are two cards left, and a coin can be with the same probability of 50% for both one and the other card?". ...And they turn out to be wrong. The correct answer is to always change the initial choice. By doing so, you double your chances of winning.
+                    <br><br>
+                    Have a nice game!
+                    <div id="about_btn" onclick="about();">close</div>
+                </div>
+                <div id="header_text" onclick="about();">Monty-Hall paradox</div>
+            </div>
+            <div class="counter">
+                <div class="counter_text">games played:</div>
+                <div id="counter_game">0</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="statistic">
+                <div class="str_name">
+                    <p class="s_n_1">changed card</p>
+                    <p class="s_n_2">didn't change card</p>
+                </div>
+                <div class="table_1">
+                    <div class="count">
+                        count
+                    </div>
+                    <div id="count_top">
+                        0
+                    </div>
+                    <div id="count_bott">
+                        0
+                    </div>
+                </div>
+                <div class="table_2">
+                    <div id="win">
+                        won
+                    </div>
+                    <div id="win_top">
+                        0
+                    </div>
+                    <div id="win_bott">
+                        0
+                    </div>
+                </div>
+                <div class="table_3">
+                    <div id="lose">
+                        lost
+                    </div>
+                    <div id="lose_top">
+                        0
+                    </div>
+                    <div id="lose_bott">
+                        0
+                    </div>
+                </div>
+            </div>
+            <div class="cards">
+                <img id="0" class="card1" src="img/card_back.png" onclick="choiceCard(this);">
+                <img id="1" class="card2" src="img/card_back.png" onclick="choiceCard(this);">
+                <img id="2" class="card3" src="img/card_back.png" onclick="choiceCard(this);">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
